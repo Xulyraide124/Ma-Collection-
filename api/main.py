@@ -1,8 +1,7 @@
 from collections.abc import AsyncGenerator
 from contextlib import asynccontextmanager
 from core.exceptions import register_exception_handlers
-from routers import auth,items
-
+from routers import auth, collection, items
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -29,3 +28,4 @@ app.add_middleware(
 register_exception_handlers(app)
 app.include_router(auth.router)
 app.include_router(items.router)
+app.include_router(collection.router)
