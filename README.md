@@ -72,7 +72,7 @@ Chaque commande doit afficher un numéro de version. Si l'une d'elles n'est pas 
 ### Récupérer le projet
 
 ```bash
-git clone <url du dépôt>
+git clone https://github.com/Xulyraide124/Ma-Collection-.git
 cd Ma-Collection-
 ```
 
