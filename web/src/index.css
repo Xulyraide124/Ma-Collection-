@@ -1,0 +1,6 @@
+body { margin: 0; font-family: system-ui, sans-serif; }
+main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+nav { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; padding: 0.75rem 1rem; }
+form { display: flex; flex-direction: column; gap: 0.75rem; max-width: 360px; }
+label { display: flex; flex-direction: column; gap: 0.25rem; }
+img { max-width: 100%; }
