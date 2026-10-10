@@ -80,7 +80,7 @@ export default function EntryCard({ entry }: EntryCardProps) {
           </label>
           <div className={styles.actions}>
             <button type="button" onClick={enregistrerCommentaire}>Enregistrer le commentaire</button>
-            <button type="button" onClick={supprimer}>Retirer</button>
+            <button type="button" className={styles.danger} onClick={supprimer}>Retirer</button>
           </div>
         </fieldset>
         {error !== null && <p role="alert">{error}</p>}

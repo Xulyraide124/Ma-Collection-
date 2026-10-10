@@ -1,1 +1,2 @@
-.pagination { display: flex; justify-content: center; align-items: center; gap: 1rem; margin: 1.5rem 0; }
+.pagination { display: flex; justify-content: center; align-items: center; gap: 1rem; margin: 1.75rem 0 0; }
+.pagination span { color: var(--muted); font-size: 0.9rem; }

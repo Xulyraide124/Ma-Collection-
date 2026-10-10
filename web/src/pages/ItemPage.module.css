@@ -1,6 +1,8 @@
-.item { display: flex; flex-direction: column; gap: 1rem; }
-.cover { width: 100%; max-width: 260px; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 8px; background: #ddd; }
+.item { display: grid; gap: 1.25rem; padding: 1.25rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+.cover { width: 100%; max-width: 240px; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 10px; background: var(--border); margin: 0 auto; }
+.item h1 { margin-bottom: 0.25rem; }
 
 @media (min-width: 640px) {
-  .item { flex-direction: row; }
+  .item { grid-template-columns: 240px 1fr; }
+  .cover { margin: 0; }
 }
