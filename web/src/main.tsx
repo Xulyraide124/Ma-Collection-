@@ -13,14 +13,10 @@ createRoot(racine).render(
   <StrictMode>
     <BrowserRouter>
       <AuthProvider>
-        <AuthProvider>
-  <CollectionProvider>
-    <App />
-  </CollectionProvider>
-</AuthProvider>
-        <App />
+        <CollectionProvider>
+          <App />
+        </CollectionProvider>
       </AuthProvider>
     </BrowserRouter>
   </StrictMode>,
-  
 );

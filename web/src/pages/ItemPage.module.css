@@ -1,0 +1,6 @@
+.item { display: flex; flex-direction: column; gap: 1rem; }
+.cover { width: 100%; max-width: 260px; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 8px; background: #ddd; }
+
+@media (min-width: 640px) {
+  .item { flex-direction: row; }
+}

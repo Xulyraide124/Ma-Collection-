@@ -2,6 +2,8 @@ import { labelCategorie } from "../constants/categories";
 import type { Item } from "../types/api";
 import styles from "./ItemCard.module.css";
 import AddToCollectionButton from "./AddToCollectionButton";
+import { Link } from "react-router-dom";
+
 
 interface ItemCardProps {
   item: Item;
@@ -9,6 +11,7 @@ interface ItemCardProps {
 
 export default function ItemCard({ item }: ItemCardProps) {
   return (
+    
     <article className={styles.card}>
       <img
         className={styles.cover}
@@ -16,6 +19,9 @@ export default function ItemCard({ item }: ItemCardProps) {
         alt={`Couverture de ${item.titre}`}
         loading="lazy"
       />
+      <h2 className={styles.title}>
+      <Link to={`/items/${item.id}`}>{item.titre}</Link>
+      </h2>
       <h2 className={styles.title}>{item.titre}</h2>
       <p className={styles.meta}>
         {item.auteur} · {item.annee}
@@ -23,5 +29,6 @@ export default function ItemCard({ item }: ItemCardProps) {
       </p>
       <p className={styles.badge}>{labelCategorie(item.categorie)}</p>
     </article>
+    
   );
 }
