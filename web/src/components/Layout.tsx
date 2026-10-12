@@ -15,7 +15,7 @@ export default function Layout() {
     <>
       <header className={styles.header}>
         <nav className={styles.nav}>
-          <Link to="/" className={styles.brand}>📚 Ma Collection</Link>
+          <Link to="/" className={styles.brand}> l'entrepôt a livre</Link>
           <div className={styles.links}>
             <NavLink to="/" end className={lienClasse}>Catalogue</NavLink>
             {user !== null ? (
@@ -37,7 +37,7 @@ export default function Layout() {
               aria-label={theme === "dark" ? "Passer au thème clair" : "Passer au thème sombre"}
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
-              {theme === "dark" ? "☀️" : "🌙"}
+              {theme === "dark" ? "jour" : "nuit"}
             </button>
             {user !== null && <button type="button" onClick={logout}>Déconnexion</button>}
           </div>

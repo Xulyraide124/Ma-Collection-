@@ -183,7 +183,7 @@ L'adresse de l'API peut être changée avec la variable `VITE_API_URL` (valeur p
 2. Créer un compte (mot de passe de 8 caractères minimum), puis ajouter des livres à sa collection.
 3. Dans **Ma collection** : changer le statut, noter de 1 à 5, commenter, filtrer par statut, trier par date ou par note, retirer un livre.
 4. Dans **Statistiques** : total, répartition par statut, note moyenne.
-5. Le bouton 🌙 / ☀️ de la barre de navigation bascule entre le thème clair et le thème sombre (le choix est mémorisé dans le navigateur).
+5. Le bouton nuit / jour de la barre de navigation bascule entre le thème clair et le thème sombre (le choix est mémorisé dans le navigateur).
 
 ## Arrêt et remise à zéro
 
